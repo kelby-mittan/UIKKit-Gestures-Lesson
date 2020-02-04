@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tap Gesture Controller-->
+        <scene sceneID="2wG-S1-O1v">
+            <objects>
+                <viewController storyboardIdentifier="TapGestureController" id="WCN-wG-Lt8" customClass="TapGestureController" customModule="UIKKit_Gestures" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wda-JC-B0Q">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="GJI-LT-ggo">
+                                <rect key="frame" x="103.5" y="351" width="207" height="204.5"/>
+                                <color key="tintColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="GJI-LT-ggo" secondAttribute="height" multiplier="1:1" id="Lu4-5R-yCb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="GJI-LT-ggo" firstAttribute="centerX" secondItem="oyu-AV-N3a" secondAttribute="centerX" id="HLq-cb-JfJ"/>
+                            <constraint firstItem="GJI-LT-ggo" firstAttribute="centerY" secondItem="oyu-AV-N3a" secondAttribute="centerY" id="eW5-Wb-Vcf"/>
+                            <constraint firstItem="GJI-LT-ggo" firstAttribute="width" secondItem="Wda-JC-B0Q" secondAttribute="width" multiplier="0.5" id="yaC-x3-df1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oyu-AV-N3a"/>
+                    </view>
+                    <connections>
+                        <outlet property="heartImageView" destination="GJI-LT-ggo" id="pdP-WG-KxG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ewU-O8-XoK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="117"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" catalog="system" width="64" height="54"/>
+    </resources>
+</document>
